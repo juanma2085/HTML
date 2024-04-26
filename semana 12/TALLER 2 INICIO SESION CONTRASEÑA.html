@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VALIDA SESION CONTRASEÑA</title>
+    <!-- link de sitio sweet alert mensajes más elegantes-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <center>
+        <h1>VALIDAR INGRESO DE SESION USUARIO</h1>
+        <h2>SISTEMA DE INFORMACIÓN BANCO NUBANK</h2>
+        <h3>SOLAMENTE PERMITIDO TRES INTENTOS</h3>
+        <br><br>
+        <script>
+            var sw=0;
+            var clave=12345; //contraseña de ingreso asignada
+            //ciclo for
+            for(f=1;f<=3;f++) //inicia en 1 y su tope maximo es 3 intentos
+            {
+                var pasw2=parseInt(prompt("INGRESE CONTRASEÑA DE INGRESO"));
+                //CONDICIONAL
+                if(pasw2==clave)
+                {
+                    swal("APRECIADO USUARIO","ACCESO OTORGADO","SUCCESS");
+                    sw=1; //cambia a estado prendida - control ingreso
+                    break;
+                }
+            }
+            //salida final
+            if(sw==0)
+            {
+                swal("APRECIADO USUARIO","ACCESO BLOQUEADO .. ESPERAR 1 MINUTO..","ERROR");
+            }else{
+                swal("APRECIADO USUARIO","BIENVENIDO AL SISTEMA DE INFORMACION BANCO NUBANK","SUCCESS");
+            }
+        </script>
+    </center>
+</body>
+</html>
