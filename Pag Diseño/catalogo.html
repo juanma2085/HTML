@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- link fontawesome -->
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/catalogo.css">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!-- MAIN -->
+<div class="main">
+<h1>TIENDA GAMAJU</h1>
+<hr>
+<h2>CATALOGO DE GAMAJU</h2>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Todos</button>
+  <button class="btn" onclick="filterSelection('servicios')"> Servicios</button>
+  <button class="btn" onclick="filterSelection('materiales')"> Materiales</button>
+  <button class="btn" onclick="filterSelection('tecnologia')"> Tecnologia</button>
+</div>
+<div id="toggle"><!-- CAMBIO-->
+  <input type="checkbox" class="checkbox" id="chk" />
+  <label class="label" for="chk">
+    <i class="fas fa-sun"></i>
+    <i class="fas fa-moon"></i>
+    <div class="ball"></div>
+  </label>
+</div>
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <!-- Portfolio Gallery Grid  Computador -->
+  <div class="column servicios">
+    <div class="content">
+      <img src="./img/1.jpg" alt="" style="width:250px;height:230px;">
+      <h4>Asesoramiento de marca Nivel 1</h4>
+      <p>$300.000</p>
+    </div>
+  </div>
+  <div class="column servicios">
+    <div class="content">
+    <img src="./img/2.jpg" alt="" style="width:250px;height:230px;">
+      <h4>Asesoramiento de marca Nivel 2</h4>
+      <p>$400.000</p>
+    </div>
+  </div>
+  <div class="column servicios">
+    <div class="content">
+    <img src="./img/3.jpg" alt="" style="width:250px;height:230px;">
+      <h4>Asesoramiento de marca Nivel 3</h4>
+      <p>$550.000</p>
+    </div>
+  </div>
+    <!-- Portfolio Gallery Grid  Celular -->
+  <div class="column materiales">
+    <div class="content">
+      <img src="/img/prismacolor.jpg" alt="" style="width:250px;height:250px;">
+      <h4>Lapices Prismacolor Premiere</h4>
+      <p>$400.000</p>
+    </div>
+  </div>
+  <div class="column materiales">
+    <div class="content">
+    <img src="./img/lapices.jpg" style="width:250px;height:250px;">
+      <h4>Lapices Staedtler</h4>
+      <p>$50.000</p>
+    </div>
+  </div>
+  <div class="column materiales">
+    <div class="content">
+    <img src="./img/acuarelas.webp" alt="" style="width:250px;height:250px;">
+      <h4>Acuarelas Winsor and Newton</h4>
+      <p>$120.000</p>
+    </div>
+  </div>
+    <!-- Portfolio Gallery Grid  Ropa -->
+  <div class="column tecnologia">
+    <div class="content">
+      <img src="./img/descarga1.jpeg" alt="" style="width:250px;height:250px;">
+      <h4>Tableta Grafica</h4>
+      <p>$800.000</p>
+    </div>
+  </div>
+  <div class="column tecnologia">
+    <div class="content">
+    <img src="./img/tableta.jpg" alt="" style="width:250px;height:250px;">
+      <h4>Tableta Grafica sin pantalla</h4>
+      <p>$200.000</p>
+    </div>
+  </div>
+  <div class="column tecnologia">
+    <div class="content">
+    <img src="./img/ipad.webp" alt="" style="width:250px;height:250px;">
+      <h4>Ipad 10</h4>
+      <p>$1.800.000</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+<center><a class="mt-2 w-100 btn btn-lg btn-primary" href="../Index.html" role="button">Volver al inicio</a></center>
+<!-- END MAIN -->
+</div>
+<footer class="footer clearfix">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 footer-para">
+				<p>&copy; <a href="https://www.mipagina.com">Gamaju</a> Todos los Derechos Reservados</p>
+			</div>
+
+			<div class="col-xs-6 text-right">
+				<a href=""><i class="fa fa-facebook"></i></a>
+				<a href=""><i class="fa fa-twitter"></i></a>
+				<a href=""><i class="fa fa-instagram"></i></a>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="./js/catalogo.js"></script>
+</body>
+</html>
